@@ -9,11 +9,16 @@
 #import <UIKit/UIKit.h>
 #import "PSPushPopPressView.h"
 
+#import "HSPlayerView.h"
+
 @interface PSExampleViewController : UIViewController <PSPushPopPressViewDelegate> {
     NSUInteger *activeCount_;
     UIView *containerView_;
     PSPushPopPressView *pushPopPressView_;
     PSPushPopPressView *pushPopPressVideoView_;
 }
+
+@property(nonatomic,strong) HSPlayerView *playerView1;
+@property(nonatomic,strong) HSPlayerView *playerView2;
 
 @end

@@ -41,15 +41,22 @@
     [containerView_ addSubview:pushPopPressView_];
 
     // add a cat image to the container
-    UIImageView *catImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cat.jpg"]];
-    catImageView.frame = pushPopPressView_.bounds;
-    catImageView.contentMode = UIViewContentModeScaleAspectFill;
-    catImageView.backgroundColor = [UIColor blackColor];
-    catImageView.layer.borderColor = [UIColor blackColor].CGColor;
-    catImageView.layer.borderWidth = 1.0f;
-    catImageView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-    catImageView.clipsToBounds = YES;
-    [pushPopPressView_ addSubview:catImageView];
+//    UIImageView *catImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cat.jpg"]];
+//    catImageView.frame = pushPopPressView_.bounds;
+//    catImageView.contentMode = UIViewContentModeScaleAspectFill;
+//    catImageView.backgroundColor = [UIColor blackColor];
+//    catImageView.layer.borderColor = [UIColor blackColor].CGColor;
+//    catImageView.layer.borderWidth = 1.0f;
+//    catImageView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+//    catImageView.clipsToBounds = YES;
+//    [pushPopPressView_ addSubview:catImageView];
+    
+    [self setPlayerView2:[[HSPlayerView alloc] initWithFrame:pushPopPressView_.bounds]];
+    [self.playerView2 setAutoresizingMask:(UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth)];
+    [self.playerView2 setBackgroundColor:[UIColor blackColor]];
+    [pushPopPressView_ addSubview:self.playerView2];
+    
+    [self.playerView2 setURL:[NSURL URLWithString:@"http://rss.feedsportal.com/c/808/f/534769/e/1/s/34f7822a/l/0Lvideo720A0Bjeuxvideo0N0C20A13120Cthe0Enovelist0Epc0E0A0A1177430E138720A46480E720Ap0Bmp4/the-novelist-pc-00117743-1387204648-720p.mp4"]];
 
     // create a second push pop press container, with a video
     pushPopPressVideoView_ = [[PSPushPopPressView alloc] initWithFrame:CGRectMake(140, 500, 500, 400)];
@@ -57,14 +64,21 @@
     [containerView_ addSubview:pushPopPressVideoView_];
 
     // create the movie player controller
-    AVPlayerDemoPlaybackViewController *moviePlayer = [[AVPlayerDemoPlaybackViewController alloc] init];
-    moviePlayer.URL = [NSURL URLWithString:@"http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8"];
-//    MPMoviePlayerViewController *moviePlayer = [[MPMoviePlayerViewController alloc] initWithContentURL:[NSURL URLWithString:@"http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8"]];
-    [self addChildViewController:moviePlayer];
-    moviePlayer.view.frame = pushPopPressVideoView_.bounds;
-    moviePlayer.view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
-    [pushPopPressVideoView_ addSubview:moviePlayer.view];
-    [moviePlayer play:self];
+//    AVPlayerDemoPlaybackViewController *moviePlayer = [[AVPlayerDemoPlaybackViewController alloc] init];
+//    moviePlayer.URL = [NSURL URLWithString:@"http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8"];
+////    MPMoviePlayerViewController *moviePlayer = [[MPMoviePlayerViewController alloc] initWithContentURL:[NSURL URLWithString:@"http://devimages.apple.com/iphone/samples/bipbop/bipbopall.m3u8"]];
+//    [self addChildViewController:moviePlayer];
+//    moviePlayer.view.frame = pushPopPressVideoView_.bounds;
+//    moviePlayer.view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+//    [pushPopPressVideoView_ addSubview:moviePlayer.view];
+//    [moviePlayer play:self];
+    
+    [self setPlayerView1:[[HSPlayerView alloc] initWithFrame:pushPopPressVideoView_.bounds]];
+    [self.playerView1 setAutoresizingMask:(UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth)];
+    [self.playerView1 setBackgroundColor:[UIColor blackColor]];
+    [pushPopPressVideoView_ addSubview:self.playerView1];
+    
+    [self.playerView1 setURL:[NSURL URLWithString:@"http://rss.feedsportal.com/c/808/f/534769/e/1/s/34f7822a/l/0Lvideo720A0Bjeuxvideo0N0C20A13120Cthe0Enovelist0Epc0E0A0A1177430E138720A46480E720Ap0Bmp4/the-novelist-pc-00117743-1387204648-720p.mp4"]];
 }
 
 - (void)viewDidUnload {

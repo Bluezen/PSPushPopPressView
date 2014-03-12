@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0579822718D0127500037D4E /* HSPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0579821718D0127500037D4E /* HSPlayerView.m */; };
+		0579822818D0127500037D4E /* HSSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0579821918D0127500037D4E /* HSSlider.m */; };
+		0579822918D0127500037D4E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 0579821A18D0127500037D4E /* LICENSE */; };
+		0579822A18D0127500037D4E /* README.markdown in Resources */ = {isa = PBXBuildFile; fileRef = 0579821B18D0127500037D4E /* README.markdown */; };
+		0579823118D0132100037D4E /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 785C5C7C1473F3D7001940A5 /* MediaPlayer.framework */; };
 		785C5C4B1473E1AD001940A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 785C5C4A1473E1AD001940A5 /* UIKit.framework */; };
 		785C5C4D1473E1AD001940A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 785C5C4C1473E1AD001940A5 /* Foundation.framework */; };
 		785C5C4F1473E1AD001940A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 785C5C4E1473E1AD001940A5 /* CoreGraphics.framework */; };
@@ -27,6 +32,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0579821618D0127500037D4E /* HSPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSPlayerView.h; sourceTree = "<group>"; };
+		0579821718D0127500037D4E /* HSPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSPlayerView.m; sourceTree = "<group>"; };
+		0579821818D0127500037D4E /* HSSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSSlider.h; sourceTree = "<group>"; };
+		0579821918D0127500037D4E /* HSSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSSlider.m; sourceTree = "<group>"; };
+		0579821A18D0127500037D4E /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		0579821B18D0127500037D4E /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
 		785C5C461473E1AD001940A5 /* PSPushPopPressViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PSPushPopPressViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		785C5C4A1473E1AD001940A5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		785C5C4C1473E1AD001940A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -37,7 +48,7 @@
 		785C5C581473E1AD001940A5 /* PSPushPopPressViewExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PSPushPopPressViewExample-Prefix.pch"; sourceTree = "<group>"; };
 		785C5C591473E1AD001940A5 /* PSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSAppDelegate.h; sourceTree = "<group>"; };
 		785C5C5A1473E1AD001940A5 /* PSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSAppDelegate.m; sourceTree = "<group>"; };
-		785C5C5C1473E1AD001940A5 /* PSExampleViewController.h */ = {isa = PBXFileReference; path = PSExampleViewController.h; sourceTree = "<group>"; };
+		785C5C5C1473E1AD001940A5 /* PSExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PSExampleViewController.h; sourceTree = "<group>"; };
 		785C5C5D1473E1AD001940A5 /* PSExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PSExampleViewController.m; sourceTree = "<group>"; };
 		785C5C781473F116001940A5 /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpg; sourceTree = "<group>"; };
 		785C5C7A1473F27E001940A5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -60,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0579823118D0132100037D4E /* MediaPlayer.framework in Frameworks */,
 				785C5CCC147410DD001940A5 /* CoreMedia.framework in Frameworks */,
 				785C5C7F14740882001940A5 /* AVFoundation.framework in Frameworks */,
 				785C5C7B1473F27E001940A5 /* QuartzCore.framework in Frameworks */,
@@ -72,6 +84,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		057981FF18D0127500037D4E /* HSPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				0579821618D0127500037D4E /* HSPlayerView.h */,
+				0579821718D0127500037D4E /* HSPlayerView.m */,
+				0579821818D0127500037D4E /* HSSlider.h */,
+				0579821918D0127500037D4E /* HSSlider.m */,
+				0579821A18D0127500037D4E /* LICENSE */,
+				0579821B18D0127500037D4E /* README.markdown */,
+			);
+			path = HSPlayer;
+			sourceTree = "<group>";
+		};
 		785C5C3B1473E1AD001940A5 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +132,7 @@
 		785C5C501473E1AD001940A5 /* PSPushPopPressViewExample */ = {
 			isa = PBXGroup;
 			children = (
+				057981FF18D0127500037D4E /* HSPlayer */,
 				785C5CC614740D34001940A5 /* AVPlayer */,
 				785C5C591473E1AD001940A5 /* PSAppDelegate.h */,
 				785C5C5A1473E1AD001940A5 /* PSAppDelegate.m */,
@@ -212,6 +238,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				785C5C551473E1AD001940A5 /* InfoPlist.strings in Resources */,
+				0579822918D0127500037D4E /* LICENSE in Resources */,
+				0579822A18D0127500037D4E /* README.markdown in Resources */,
 				785C5C791473F116001940A5 /* cat.jpg in Resources */,
 				785C5CD314741128001940A5 /* AVPlayerDemoPlaybackView-iPad.xib in Resources */,
 				785C5CD414741128001940A5 /* AVPlayerDemoPlaybackView.xib in Resources */,
@@ -232,6 +260,8 @@
 				785C5CC414740D2F001940A5 /* AVPlayerDemoPlaybackView.m in Sources */,
 				785C5CC514740D2F001940A5 /* AVPlayerDemoPlaybackViewController.m in Sources */,
 				785C5CE314742D78001940A5 /* PSPushPopPressView.m in Sources */,
+				0579822718D0127500037D4E /* HSPlayerView.m in Sources */,
+				0579822818D0127500037D4E /* HSSlider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
